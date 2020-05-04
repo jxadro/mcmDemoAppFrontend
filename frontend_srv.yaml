@@ -1,0 +1,18 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: frontend-srv
+  labels:
+    app: gbchn
+    chart: gbchn-0.1.0
+    release: gbchn
+    heritage: Tiller
+spec:
+  type: NodePort
+  ports:
+    - port: 80
+  selector:
+    app: gbchn
+    release: gbchn
+    tier: frontend
+
