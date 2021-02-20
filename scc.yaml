@@ -35,7 +35,7 @@ seccompProfiles:
 supplementalGroups:
   type: RunAsAny
 users:
-- system:serviceaccount:mcm-apps:default
+- system:serviceaccount:acm-apps:default
 volumes:
 - '*'
 
